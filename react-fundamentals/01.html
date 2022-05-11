@@ -1,0 +1,23 @@
+<!-- Basic JavaScript-rendered Hello World -->
+<!-- http://localhost:3000/isolated/exercise/01.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      const div = document.createElement('div')
+      div.textContent = 'Hello World'
+      div.className = 'container'
+      document.getElementById('root').append(div)
+    </script>
+  </body>
+</body>
+</html>
