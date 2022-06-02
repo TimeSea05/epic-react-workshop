@@ -1,6 +1,3 @@
-<!-- Intro to raw React APIs -->
-<!-- http://localhost:3000/isolated/exercise/02.html -->
-
 <body>
   <div id="root"></div>
   <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
@@ -9,7 +6,11 @@
     const rootElement = document.getElementById('root')
 
     const elementProps = {
-      children: 'Hello World',
+      children: [
+        React.createElement('span', {children: 'Hello'}),
+        ' ',
+        React.createElement('span', {children: 'World'})
+      ],
       className: 'container'
     }
     const elementType = 'div'
